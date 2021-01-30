@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">02_Toolbar</string>
+    <string name="menu_profil">Личный кабинет</string>
+    <string name="menu_progect">Проекты</string>
+    <string name="menu_contact">Контакты</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_search">Поиск</string>
+    <string name="long_string">START  ываправпрвпрвапрварпцрукпмжцвщамзцуотамцзотмазцотмзаотумазцотмазоцтзамотзалоцтзпалоцтзаилоцвзатцвзлмтзйутмцзщумотцзущотмцзоатмзxdfbfbdfgsfpjnspjnsdpvnpsdkjfnvpdjnfvpjsndpvjnsdpjnbpsjnfpkvjnzc;mnvalnfvspdofvspofughspfonzdplmcnvaposdfnsdpoufghsdpfoigsdpklcnvladspvцотмазцуотамзовтзлтылсьмтцузащотмцзваотмывзлстмцзмоткцзпотизывотадцьтцущ   END</string>
+    <string name="logo_image">logo_image</string>
+</resources>

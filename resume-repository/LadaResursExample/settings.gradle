@@ -1,0 +1,2 @@
+rootProject.name='LadaResursExample'
+include ':app'

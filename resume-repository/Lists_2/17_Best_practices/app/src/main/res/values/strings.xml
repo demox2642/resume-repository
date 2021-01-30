@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">17_Best_practices</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="linearlayoutmanager">LinearLayoutManager</string>
+    <string name="gridlayoutmanager">GridLayoutManager</string>
+    <string name="staggeredgridlayoutmanager">StaggeredGridLayoutManager</string>
+    <string name="class_a">Class A</string>
+    <string name="class_b">Class B</string>
+    <string name="class_c">Class C</string>
+    <string name="class_d">Class D</string>
+    <string name="class_e">Class E</string>
+    <string name="class_j">Class J</string>
+    <string name="add_car_class">Создание автомобиля класса :</string>
+    <string name="enter_car_label">Введите марку</string>
+    <string name="enter_car_name">Введите название автомобиля</string>
+    <string name="enge">Введите объем двигателя</string>
+    <string name="image_linc">Введите ссылку на картинку</string>
+    <string name="save">Сохранить</string>
+    <string name="no_item_list">Список пуст!</string>
+    <string name="dors_count">Кол-во дверей:</string>
+    <string name="ground_clearance">Дорожный просвет:</string>
+    <string name="load_imege">load_imege</string>
+    <string name="size">Размер:</string>
+    <string name="fuel">Расход топлива:</string>
+    <string name="sids_count">Количество сидений:</string>
+</resources>

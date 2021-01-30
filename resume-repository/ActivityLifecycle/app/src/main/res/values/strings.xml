@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ActivityLifecycle</string>
+    <string name="performed">Логин, пароль успешно сохранены.</string>
+    <string name="emailNotValid">Вы ввели не правильный email</string>
+    <string name="email">Введите email и пароль</string>
+    <string name="enter_email">Введите свой email</string>
+    <string name="password">Введите пароль</string>
+    <string name="egreement">Согласен с условиями</string>
+    <string name="enter_button">Кнопка логина</string>
+    <string name="todo">TODO</string>
+    <string name="anr_dialog">anr_dialog</string>
+</resources>
