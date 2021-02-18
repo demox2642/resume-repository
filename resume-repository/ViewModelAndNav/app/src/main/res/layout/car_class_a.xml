@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/car_class_a"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/rounded_a_class"
+    style="@style/CarClassA"
+    >
+
+    <ImageView
+        android:id="@+id/car_imege"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars"/>
+
+    <TextView
+        android:id="@+id/car_brend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/car_imege"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/car_imege"
+        app:layout_constraintTop_toBottomOf="@+id/car_brend"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/engine_capacity_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/car_imege"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:layout_margin="8dp"
+        tools:text="Объем двигателя:" />
+
+    <TextView
+        android:id="@+id/sizeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+        android:text="@string/size"
+        app:layout_constraintStart_toStartOf="@id/engine_capacity_textview"
+        app:layout_constraintTop_toBottomOf="@+id/engine_capacity_textview"
+        app:layout_constraintEnd_toEndOf="@+id/engine_capacity_textview"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/class_a"
+        android:contentDescription="@string/class_a" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="69dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

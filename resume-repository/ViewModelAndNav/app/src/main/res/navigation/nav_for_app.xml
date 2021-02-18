@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_for_app"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.skilbox.viewmodelandnav.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/mainFragment_to_lLMFragment"
+            app:destination="@id/LLM"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_GLM"
+            app:destination="@id/GLM" />
+        <action
+            android:id="@+id/action_mainFragment_to_SGLM"
+            app:destination="@id/SGLM" />
+    </fragment>
+    <navigation android:id="@+id/LLM"
+        app:startDestination="@id/linearLayoutManagerFragment">
+        <fragment
+            android:id="@+id/carClassDialogFragment"
+            android:name="com.skilbox.viewmodelandnav.LLM.CarClassDialogFragment"
+            android:label="CarClassDialogFragment"
+            tools:layout="@layout/fragment_car_class_dialog">
+            <argument
+                android:name="carClass"
+                app:argType="string" />
+        </fragment>
+        <fragment
+            android:id="@+id/linearLayoutManagerFragment"
+            android:name="com.skilbox.viewmodelandnav.LLM.LinearLayoutManagerFragment"
+            android:label="LinearLayoutManagerFragment"
+            tools:layout="@layout/fragment_linear_layout_manager">
+            <action
+                android:id="@+id/action_linearLayoutManagerFragment_to_carClassDialogFragment"
+                app:destination="@id/carClassDialogFragment" />
+            <action
+                android:id="@+id/lLLMFragment_to_detailFragment"
+                app:destination="@id/detailFragmentLLM" />
+        </fragment>
+        <fragment
+            android:id="@+id/detailFragmentLLM"
+            android:name="com.skilbox.viewmodelandnav.LLM.DetailFragmentLLM"
+            android:label="DetailFragmentLLM"
+            tools:layout="@layout/fragment_detail">
+            <argument
+                android:name="carId"
+                app:argType="long" />
+            <argument
+                android:name="carImage"
+                app:argType="string" />
+            <argument
+                android:name="carBrend"
+                app:argType="string" />
+            <argument
+                android:name="carName"
+                app:argType="string" />
+            <argument
+                android:name="carEngine_capacity"
+                app:argType="string" />
+        </fragment>
+    </navigation>
+    <navigation android:id="@+id/GLM"
+        app:startDestination="@id/gridLayoutManagerFragment">
+        <fragment
+            android:id="@+id/carClassDialogFragmentGLM"
+            android:name="com.skilbox.viewmodelandnav.GLM.CarClassDialogFragmentGLM"
+            android:label="CarClassDialogFragmentGLM"
+            tools:layout="@layout/fragment_car_class_dialog">
+            <argument
+                android:name="carClass"
+                app:argType="string" />
+        </fragment>
+        <fragment
+            android:id="@+id/detailFragmentGLM"
+            android:name="com.skilbox.viewmodelandnav.GLM.DetailFragmentGLM"
+            android:label="DetailFragmentGLM"
+            tools:layout="@layout/fragment_detail">
+            <argument
+                android:name="carId"
+                app:argType="long" />
+            <argument
+                android:name="carImage"
+                app:argType="string" />
+            <argument
+                android:name="carBrend"
+                app:argType="string" />
+            <argument
+                android:name="carName"
+                app:argType="string" />
+            <argument
+                android:name="carEngine_capacity"
+                app:argType="string" />
+        </fragment>
+        <fragment
+            android:id="@+id/gridLayoutManagerFragment"
+            android:name="com.skilbox.viewmodelandnav.GLM.GridLayoutManagerFragment"
+            android:label="GridLayoutManagerFragment"
+            tools:layout="@layout/fragment_grid_layout_manager">
+            <action
+                android:id="@+id/action_gLMFragment_to_carClassDialogFragmentGLM"
+                app:destination="@id/carClassDialogFragmentGLM" />
+            <action
+                android:id="@+id/action_gLMFragment_to_detailFragmentGLM"
+                app:destination="@id/detailFragmentGLM" />
+        </fragment>
+    </navigation>
+    <navigation android:id="@+id/SGLM"
+        app:startDestination="@id/staggeredGridLayoutManagerFragment">
+        <fragment
+            android:id="@+id/detailFragmentSGLM"
+            android:name="com.skilbox.viewmodelandnav.SGLM.DetailFragmentSGLM"
+            android:label="DetailFragmentSGLM"
+            tools:layout="@layout/fragment_detail">
+            <argument
+                android:name="carId"
+                app:argType="long" />
+            <argument
+                android:name="carImage"
+                app:argType="string" />
+            <argument
+                android:name="carBrend"
+                app:argType="string" />
+            <argument
+                android:name="carName"
+                app:argType="string" />
+            <argument
+                android:name="carEngine_capacity"
+                app:argType="string" />
+        </fragment>
+        <fragment
+            android:id="@+id/staggeredGridLayoutManagerFragment"
+            android:name="com.skilbox.viewmodelandnav.SGLM.StaggeredGridLayoutManagerFragment"
+            android:label="StaggeredGridLayoutManagerFragment"
+            tools:layout="@layout/fragment_staggered_grid_layout_manager">
+            <action
+                android:id="@+id/action_SGLMFragment_to_detailFragmentSGLM"
+                app:destination="@id/detailFragmentSGLM" />
+            <action
+                android:id="@+id/action_SGLMFragment_to_carClassDialogFragmentSGLM"
+                app:destination="@id/carClassDialogFragmentSGLM" />
+        </fragment>
+        <dialog
+            android:id="@+id/carClassDialogFragmentSGLM"
+            android:name="com.skilbox.viewmodelandnav.SGLM.CarClassDialogFragmentSGLM"
+            android:label="CarClassDialogFragmentSGLM"
+            tools:layout="@layout/fragment_car_class_dialog">
+            <argument
+                android:name="carClass"
+                app:argType="string" />
+        </dialog>
+    </navigation>
+</navigation>
