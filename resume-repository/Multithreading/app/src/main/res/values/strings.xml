@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Multithreading</string>
+    <string name="N">Введите количество потоков</string>
+    <string name="M">Укажите число, на которое каждый поток инкрементирует переменную</string>
+    <string name="button_1">Button 1</string>
+    <string name="button_2">Button 2</string>
+</resources>
