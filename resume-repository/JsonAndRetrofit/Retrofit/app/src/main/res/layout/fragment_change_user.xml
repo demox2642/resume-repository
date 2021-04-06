@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/change_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+    <EditText
+        android:id="@+id/change_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:labelFor="@id/change_name_text"
+        app:layout_constraintStart_toEndOf="@+id/change_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/change_email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_name" />
+
+    <EditText
+        android:id="@+id/change_user_email"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/change_email_text"
+        app:layout_constraintTop_toBottomOf="@+id/change_name"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/change_location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/location"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_email" />
+
+    <EditText
+        android:id="@+id/change_user_location"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/change_location_text"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_email"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/change_blog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/blog"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_location" />
+
+    <EditText
+        android:id="@+id/change_user_blog"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/change_blog_text"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_location"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/change_twitter_username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/twitter_username"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_blog" />
+
+    <EditText
+        android:id="@+id/change_user_twitter_username"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/change_twitter_username_text"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_blog"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/change_company_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/company"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_twitter_username" />
+
+    <EditText
+        android:id="@+id/change_user_company"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/change_company_text"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_twitter_username"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/change_hireable_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/hireable"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_company" />
+
+    <Switch
+        android:id="@+id/change_user_hireable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/change_company_text"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_company"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/cancellation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancellation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/confirm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_hireable" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancellation"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_hireable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

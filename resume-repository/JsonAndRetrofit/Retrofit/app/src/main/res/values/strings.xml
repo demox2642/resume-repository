@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="main_profile">Профиль</string>
+    <string name="main_repositories">Список репозиториев</string>
+    <string name="auth_login">Войти</string>
+    <string name="auth_canceled">Аутентификация не выполнена</string>
+    <string name="user_id">user_id:</string>
+    <string name="name">name:</string>
+    <string name="email">email:</string>
+    <string name="location">location:</string>
+    <string name="repository_id">repository id:</string>
+    <string name="repository_htm_url">repository htm url:</string>
+    <string name="language">language:</string>
+    <string name="create_at">create at:</string>
+    <string name="update_at">update at:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_user_button">Изменить данные о пользователе</string>
+    <string name="blog">blog:</string>
+    <string name="twitter_username">twitter username:</string>
+    <string name="company">company:</string>
+    <string name="hireable">hireable:</string>
+    <string name="heading">Изменение информации о пользователе</string>
+    <string name="cancellation">Отмена</string>
+    <string name="confirm">Подтвердить</string>
+</resources>

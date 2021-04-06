@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.skillbox.github"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.hannesdorfmann:adapterdelegates4:4.3.0'
+
+    def lifecycleVersion = '2.2.0'
+
+    //ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+    implementation "androidx.fragment:fragment-ktx:1.2.5"
+    //LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
+    //Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.4"
+
+    //Moshi
+    def moshiVersion = '1.9.3'
+
+    implementation "com.squareup.moshi:moshi:$moshiVersion"
+    implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
+
+    //Retrofit
+
+    def retrofitVersion = '2.9.0'
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:4.8.0"
+
+    //AppAuth
+    implementation 'net.openid:appauth:0.7.1'
+
+    // Include `flipperandroidnoop` and  `soloadernoop` individually
+//    releaseImplementation 'com.github.theGlenn.flipper-android-no-op:flipperandroidnoop:0.4.0'
+//    releaseImplementation 'com.github.theGlenn.flipper-android-no-op:soloadernoop:0.4.0'
+
+    // Includes both libraries
+//   releaseImplementation 'com.github.theGlenn:flipper-android-no-op:0.4.0'
+    //flipper
+
+    repositories {
+        mavenCentral()
+    }
+
+    debugImplementation 'com.facebook.flipper:flipper:0.79.1'
+    debugImplementation 'com.facebook.flipper:flipper-litho-plugin:0.46.0'
+    releaseImplementation 'com.facebook.flipper:flipper-noop:0.33.1'
+    debugImplementation 'com.facebook.flipper:flipper-network-plugin:0.79.1'
+    debugImplementation "com.facebook.soloader:soloader:0.10.1"
+
+}

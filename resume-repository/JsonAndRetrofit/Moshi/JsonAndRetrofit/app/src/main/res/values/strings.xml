@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">JsonAndRetrofit</string>
+    <string name="movie_type">Введите название фильма</string>
+    <string name="add_year">Введите год выпуска</string>
+    <string name="search">Search</string>
+    <string name="repeat">repeat</string>
+    <string name="reiting">reiting:</string>
+    <string name="type">Type:</string>
+    <string name="scores">Scores:</string>
+    <string name="movie_id">movie id:</string>
+    <string-array name="movie_type">
+    <item>not chosen (click me)</item>
+    <item>series</item>
+    <item>movie</item>
+    <item>episode</item>
+    </string-array>
+</resources>
