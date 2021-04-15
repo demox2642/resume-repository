@@ -1,1 +1,0 @@
-# Списки. Best Practices

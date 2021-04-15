@@ -1,4 +1,0 @@
-
-interface AddCarDialog {
-    fun showSingleDialog()
-}
