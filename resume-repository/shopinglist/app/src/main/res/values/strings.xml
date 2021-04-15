@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">ShopingList</string>
-    <string-array name="listViewItems">
-        <item>Продукты</item>
-        <item>Одежда</item>
-        <item>Инструменты</item>
-        <item>Хозтовары</item>
-    </string-array>
-</resources>
