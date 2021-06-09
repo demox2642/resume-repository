@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.skilbox.shopdb.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_catalogsFragment"
+            app:destination="@id/catalogsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_warehouseOperationsFragment"
+            app:destination="@id/warehouseOperationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogsFragment"
+        android:name="com.skilbox.shopdb.CatalogsFragment"
+        android:label="fragment_catalogs"
+        tools:layout="@layout/fragment_catalogs">
+        <action
+            android:id="@+id/action_catalogsFragment_to_addressesFragment"
+            app:destination="@id/addressesFragment" />
+        <action
+            android:id="@+id/action_catalogsFragment_to_shopsFragment"
+            app:destination="@id/shopsFragment" />
+        <action
+            android:id="@+id/action_catalogsFragment_to_departmentsFragment"
+            app:destination="@id/departmentsFragment" />
+        <action
+            android:id="@+id/action_catalogsFragment_to_positionsFragment"
+            app:destination="@id/positionsFragment" />
+        <action
+            android:id="@+id/action_catalogsFragment_to_employersFragment"
+            app:destination="@id/employersFragment" />
+        <action
+            android:id="@+id/action_catalogsFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+        <action
+            android:id="@+id/action_catalogsFragment_to_suplesFragment"
+            app:destination="@id/suplesFragment" />
+        <action
+            android:id="@+id/action_catalogsFragment_to_salePriceFragment"
+            app:destination="@id/salePriceFragment" />
+        <action
+            android:id="@+id/action_catalogsFragment_to_supplyPriceFragment"
+            app:destination="@id/supplyPriceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressesFragment"
+        android:name="com.skilbox.shopdb.AddressesFragment"
+        android:label="fragment_addresses"
+        tools:layout="@layout/fragment_addresses">
+        <action
+            android:id="@+id/action_addressesFragment_to_addAddressesFragment"
+            app:destination="@id/addAddressesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAddressesFragment"
+        android:name="com.skilbox.shopdb.AddAddressesFragment"
+        android:label="fragment_add_addresses"
+        tools:layout="@layout/fragment_add_addresses" />
+    <fragment
+        android:id="@+id/shopsFragment"
+        android:name="com.skilbox.shopdb.ShopsFragment"
+        android:label="fragment_shops"
+        tools:layout="@layout/fragment_shops">
+        <action
+            android:id="@+id/action_shopsFragment_to_addShopFragment"
+            app:destination="@id/addShopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addShopFragment"
+        android:name="com.skilbox.shopdb.AddShopFragment"
+        android:label="fragment_add_shop"
+        tools:layout="@layout/fragment_add_shop" />
+    <fragment
+        android:id="@+id/departmentsFragment"
+        android:name="com.skilbox.shopdb.DepartmentsFragment"
+        android:label="fragment_departments"
+        tools:layout="@layout/fragment_departments">
+        <action
+            android:id="@+id/action_departmentsFragment_to_addDepartmentsFragment"
+            app:destination="@id/addDepartmentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDepartmentsFragment"
+        android:name="com.skilbox.shopdb.AddDepartmentsFragment"
+        android:label="fragment_add_departments"
+        tools:layout="@layout/fragment_add_departments" />
+    <fragment
+        android:id="@+id/positionsFragment"
+        android:name="com.skilbox.shopdb.PositionsFragment"
+        android:label="fragment_positions"
+        tools:layout="@layout/fragment_positions">
+        <action
+            android:id="@+id/action_positionsFragment_to_addPositionFragment"
+            app:destination="@id/addPositionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPositionFragment"
+        android:name="com.skilbox.shopdb.AddPositionFragment"
+        android:label="fragment_add_position"
+        tools:layout="@layout/fragment_add_position" />
+    <fragment
+        android:id="@+id/employersFragment"
+        android:name="com.skilbox.shopdb.EmployersFragment"
+        android:label="fragment_employers"
+        tools:layout="@layout/fragment_employers">
+        <action
+            android:id="@+id/action_employersFragment_to_addEmployerFragment"
+            app:destination="@id/addEmployerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEmployerFragment"
+        android:name="com.skilbox.shopdb.AddEmployerFragment"
+        android:label="fragment_add_employer"
+        tools:layout="@layout/fragment_add_employer" />
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.skilbox.shopdb.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products">
+        <action
+            android:id="@+id/action_productsFragment_to_addProductsFragment"
+            app:destination="@id/addProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductsFragment"
+        android:name="com.skilbox.shopdb.AddProductsFragment"
+        android:label="fragment_add_products"
+        tools:layout="@layout/fragment_add_products" />
+    <fragment
+        android:id="@+id/suplesFragment"
+        android:name="com.skilbox.shopdb.SuppliersFragment"
+        android:label="fragment_suples"
+        tools:layout="@layout/fragment_suples">
+        <action
+            android:id="@+id/action_suplesFragment_to_addSuplesFragment"
+            app:destination="@id/addSuplesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSuplesFragment"
+        android:name="com.skilbox.shopdb.AddSuplesFragment"
+        android:label="fragment_add_suples"
+        tools:layout="@layout/fragment_add_suples" />
+    <fragment
+        android:id="@+id/salePriceFragment"
+        android:name="com.skilbox.shopdb.SalePriceFragment"
+        android:label="fragment_sale_price"
+        tools:layout="@layout/fragment_sale_price">
+        <action
+            android:id="@+id/action_salePriceFragment_to_addSalePriceFragment"
+            app:destination="@id/addSalePriceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSalePriceFragment"
+        android:name="com.skilbox.shopdb.AddSalePriceFragment"
+        android:label="fragment_add_sale_price"
+        tools:layout="@layout/fragment_add_sale_price" />
+    <fragment
+        android:id="@+id/supplyPriceFragment"
+        android:name="com.skilbox.shopdb.SupplyPriceFragment"
+        android:label="fragment_supply_price"
+        tools:layout="@layout/fragment_supply_price">
+        <action
+            android:id="@+id/action_supplyPriceFragment_to_addSupplyPriceFragment"
+            app:destination="@id/addSupplyPriceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSupplyPriceFragment"
+        android:name="com.skilbox.shopdb.AddSupplyPriceFragment"
+        android:label="fragment_add_supply_price"
+        tools:layout="@layout/fragment_add_supply_price" />
+    <fragment
+        android:id="@+id/warehouseOperationsFragment"
+        android:name="com.skilbox.shopdb.WarehouseOperationsFragment"
+        android:label="fragment_warehouse_operations"
+        tools:layout="@layout/fragment_warehouse_operations" >
+        <action
+            android:id="@+id/action_warehouseOperationsFragment_to_sale"
+            app:destination="@id/sale" />
+        <action
+            android:id="@+id/action_warehouseOperationsFragment_to_suppliy"
+            app:destination="@id/suppliy" />
+        <action
+            android:id="@+id/action_warehouseOperationsFragment_to_leftoversFragment"
+            app:destination="@id/leftoversFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sale"
+        android:name="com.skilbox.shopdb.Sale"
+        android:label="fragment_sale"
+        tools:layout="@layout/fragment_sale" >
+        <action
+            android:id="@+id/action_sale_to_addSaleFragment"
+            app:destination="@id/addSaleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/suppliy"
+        android:name="com.skilbox.shopdb.SuppliyFragment"
+        android:label="fragment_suppliy"
+        tools:layout="@layout/fragment_suppliy" >
+        <action
+            android:id="@+id/action_suppliy_to_addSupply"
+            app:destination="@id/addSupply" />
+    </fragment>
+    <fragment
+        android:id="@+id/leftoversFragment"
+        android:name="com.skilbox.shopdb.LeftoversWarehauseFragment"
+        android:label="fragment_leftovers"
+        tools:layout="@layout/fragment_leftovers" />
+    <fragment
+        android:id="@+id/addSupply"
+        android:name="com.skilbox.shopdb.AddSupply"
+        android:label="fragment_add_supply"
+        tools:layout="@layout/fragment_add_supply" />
+    <fragment
+        android:id="@+id/addSaleFragment"
+        android:name="com.skilbox.shopdb.AddSaleFragment"
+        android:label="fragment_add_sale"
+        tools:layout="@layout/fragment_add_sale" />
+</navigation>

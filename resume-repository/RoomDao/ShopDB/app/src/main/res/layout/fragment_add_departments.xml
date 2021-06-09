@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".AddDepartmentsFragment">
+
+    <TextView
+        android:id="@+id/depart_name_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/depart_name_textView" />
+
+    <EditText
+        android:id="@+id/depart_name_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/depart_nameShort_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/depart_nameShort_textView" />
+
+    <EditText
+        android:id="@+id/depart_nameShort_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+
+    <Spinner
+        android:id="@+id/spinner_shops"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_margin="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner_parentDeparts"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/add_depart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+</LinearLayout>
